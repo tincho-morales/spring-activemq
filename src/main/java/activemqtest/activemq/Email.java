@@ -2,6 +2,7 @@ package activemqtest.activemq;
 
 public class Email {
 
+    private String id;
     private String to;
     private String body;
     private int seconds;
@@ -9,7 +10,8 @@ public class Email {
     public Email() {
     }
 
-    public Email(String to, String body,int seconds) {
+    public Email(String id, String to, String body,int seconds) {
+        this.id = id;
         this.to = to;
         this.body = body;
         this.seconds = seconds;
@@ -37,5 +39,13 @@ public class Email {
 
     public void setSeconds(int seconds) {
         this.seconds = seconds;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

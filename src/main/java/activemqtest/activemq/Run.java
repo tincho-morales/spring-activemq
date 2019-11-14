@@ -17,9 +17,9 @@ public class Run  implements ApplicationRunner {
     public void run(ApplicationArguments applicationArguments) throws Exception {
 
 
-        sender.sendEmail(new Email("tincho@geocom.com.uy","Vamos tincho",5000));
-        sender.sendEmail(new Email("martin@geocom.com.uy","Vamos martin",0));
-        sender.sendEmail(new Email("morales@geocom.com.uy","Vamos morales",0));
+        sender.sendEmail(new Email("1","tincho@geocom.com.uy","Vamos tincho",5000));
+        sender.sendEmail(new Email("2","martin@geocom.com.uy","Vamos martin",5000));
+        sender.sendEmail(new Email("3","morales@geocom.com.uy","Vamos morales",3000));
 
     }
 
