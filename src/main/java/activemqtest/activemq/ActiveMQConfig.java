@@ -107,7 +107,7 @@ public class ActiveMQConfig {
         policy.setRedeliveryDelay(5000);
         //policy.setBackOffMultiplier(2);
         policy.setUseExponentialBackOff(false);
-        policy.setMaximumRedeliveries(2);
+        policy.setMaximumRedeliveries(10);
 
         return policy;
     }
